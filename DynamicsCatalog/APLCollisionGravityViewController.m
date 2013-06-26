@@ -96,6 +96,7 @@
  */
 
 #import "APLCollisionGravityViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface APLCollisionGravityViewController () <UICollisionBehaviorDelegate>
 
@@ -120,6 +121,11 @@
     [animator addBehavior:gravityBeahvior];
     [animator addBehavior:collisionBehavior];
     collisionBehavior.collisionDelegate = self;
+  if (NO) {
+    NSLog(@"testhrer");
+  }
+  CGColorSpaceRef graySpace = CGColorSpaceCreateDeviceGray();
+  CGContextRef imageMaskContextRef = CGBitmapContextCreate(NULL, 0, 0, 8, 0, graySpace, kCGImageAlphaNone);
     
     self.animator = animator;
 }
