@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "02CA22EB177ABEE100D5AE48"
+               BuildableName = "DynamicsCatalog Tests.xctest"
+               BlueprintName = "DynamicsCatalog Tests"
+               ReferencedContainer = "container:DynamicsCatalog.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

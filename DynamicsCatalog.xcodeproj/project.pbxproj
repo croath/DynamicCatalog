@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02CA22EE177ABEE100D5AE48 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CA22ED177ABEE100D5AE48 /* XCTest.framework */; };
+		02CA22EF177ABEE100D5AE48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2806C642175BE66C00827B6B /* Foundation.framework */; };
+		02CA22F0177ABEE100D5AE48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2806C646175BE66C00827B6B /* UIKit.framework */; };
+		02CA22F6177ABEE100D5AE48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02CA22F4177ABEE100D5AE48 /* InfoPlist.strings */; };
+		02CA22F8177ABEE100D5AE48 /* DynamicsCatalog_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CA22F7177ABEE100D5AE48 /* DynamicsCatalog_Tests.m */; };
 		2806C643175BE66C00827B6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2806C642175BE66C00827B6B /* Foundation.framework */; };
 		2806C645175BE66C00827B6B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2806C644175BE66C00827B6B /* CoreGraphics.framework */; };
 		2806C647175BE66C00827B6B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2806C646175BE66C00827B6B /* UIKit.framework */; };
@@ -25,7 +30,23 @@
 		28E53D5C175C07C4009B735C /* APLItemPropertiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E53D5B175C07C4009B735C /* APLItemPropertiesViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		02CA22FA177ABEE100D5AE48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2806C637175BE66C00827B6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2806C63E175BE66C00827B6B;
+			remoteInfo = DynamicsCatalog;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		02CA22EC177ABEE100D5AE48 /* DynamicsCatalog Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DynamicsCatalog Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02CA22ED177ABEE100D5AE48 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		02CA22F3177ABEE100D5AE48 /* DynamicsCatalog Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DynamicsCatalog Tests-Info.plist"; sourceTree = "<group>"; };
+		02CA22F5177ABEE100D5AE48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		02CA22F7177ABEE100D5AE48 /* DynamicsCatalog_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicsCatalog_Tests.m; sourceTree = "<group>"; };
+		02CA22F9177ABEE100D5AE48 /* DynamicsCatalog Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicsCatalog Tests-Prefix.pch"; sourceTree = "<group>"; };
 		2806C63F175BE66C00827B6B /* DynamicsCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicsCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2806C642175BE66C00827B6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2806C644175BE66C00827B6B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,6 +79,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		02CA22E9177ABEE100D5AE48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02CA22EE177ABEE100D5AE48 /* XCTest.framework in Frameworks */,
+				02CA22F0177ABEE100D5AE48 /* UIKit.framework in Frameworks */,
+				02CA22EF177ABEE100D5AE48 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2806C63C175BE66C00827B6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,11 +102,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02CA22F1177ABEE100D5AE48 /* DynamicsCatalog Tests */ = {
+			isa = PBXGroup;
+			children = (
+				02CA22F7177ABEE100D5AE48 /* DynamicsCatalog_Tests.m */,
+				02CA22F2177ABEE100D5AE48 /* Supporting Files */,
+			);
+			path = "DynamicsCatalog Tests";
+			sourceTree = "<group>";
+		};
+		02CA22F2177ABEE100D5AE48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02CA22F3177ABEE100D5AE48 /* DynamicsCatalog Tests-Info.plist */,
+				02CA22F4177ABEE100D5AE48 /* InfoPlist.strings */,
+				02CA22F9177ABEE100D5AE48 /* DynamicsCatalog Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		2806C636175BE66C00827B6B = {
 			isa = PBXGroup;
 			children = (
 				28E53D53175BF68B009B735C /* ReadMe.txt */,
 				2806C648175BE66C00827B6B /* DynamicsCatalog */,
+				02CA22F1177ABEE100D5AE48 /* DynamicsCatalog Tests */,
 				2806C641175BE66C00827B6B /* Frameworks */,
 				2806C640175BE66C00827B6B /* Products */,
 			);
@@ -85,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				2806C63F175BE66C00827B6B /* DynamicsCatalog.app */,
+				02CA22EC177ABEE100D5AE48 /* DynamicsCatalog Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +147,7 @@
 				2806C642175BE66C00827B6B /* Foundation.framework */,
 				2806C644175BE66C00827B6B /* CoreGraphics.framework */,
 				2806C646175BE66C00827B6B /* UIKit.framework */,
+				02CA22ED177ABEE100D5AE48 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,6 +194,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		02CA22EB177ABEE100D5AE48 /* DynamicsCatalog Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02CA22FC177ABEE100D5AE48 /* Build configuration list for PBXNativeTarget "DynamicsCatalog Tests" */;
+			buildPhases = (
+				02CA22E8177ABEE100D5AE48 /* Sources */,
+				02CA22E9177ABEE100D5AE48 /* Frameworks */,
+				02CA22EA177ABEE100D5AE48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02CA22FB177ABEE100D5AE48 /* PBXTargetDependency */,
+			);
+			name = "DynamicsCatalog Tests";
+			productName = "DynamicsCatalog Tests";
+			productReference = 02CA22EC177ABEE100D5AE48 /* DynamicsCatalog Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2806C63E175BE66C00827B6B /* DynamicsCatalog */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2806C671175BE66C00827B6B /* Build configuration list for PBXNativeTarget "DynamicsCatalog" */;
@@ -167,6 +238,11 @@
 				CLASSPREFIX = APL;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Apple Inc.";
+				TargetAttributes = {
+					02CA22EB177ABEE100D5AE48 = {
+						TestTargetID = 2806C63E175BE66C00827B6B;
+					};
+				};
 			};
 			buildConfigurationList = 2806C63A175BE66C00827B6B /* Build configuration list for PBXProject "DynamicsCatalog" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -182,11 +258,20 @@
 			projectRoot = "";
 			targets = (
 				2806C63E175BE66C00827B6B /* DynamicsCatalog */,
+				02CA22EB177ABEE100D5AE48 /* DynamicsCatalog Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		02CA22EA177ABEE100D5AE48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02CA22F6177ABEE100D5AE48 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2806C63D175BE66C00827B6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,6 +285,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		02CA22E8177ABEE100D5AE48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02CA22F8177ABEE100D5AE48 /* DynamicsCatalog_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2806C63B175BE66C00827B6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,7 +312,23 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		02CA22FB177ABEE100D5AE48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2806C63E175BE66C00827B6B /* DynamicsCatalog */;
+			targetProxy = 02CA22FA177ABEE100D5AE48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		02CA22F4177ABEE100D5AE48 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02CA22F5177ABEE100D5AE48 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		2806C64B175BE66C00827B6B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -239,6 +348,47 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		02CA22FD177ABEE100D5AE48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DynamicsCatalog.app/DynamicsCatalog";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP2.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DynamicsCatalog Tests/DynamicsCatalog Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DynamicsCatalog Tests/DynamicsCatalog Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		02CA22FE177ABEE100D5AE48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DynamicsCatalog.app/DynamicsCatalog";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP2.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DynamicsCatalog Tests/DynamicsCatalog Tests-Prefix.pch";
+				INFOPLIST_FILE = "DynamicsCatalog Tests/DynamicsCatalog Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		2806C66F175BE66C00827B6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -343,6 +493,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		02CA22FC177ABEE100D5AE48 /* Build configuration list for PBXNativeTarget "DynamicsCatalog Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02CA22FD177ABEE100D5AE48 /* Debug */,
+				02CA22FE177ABEE100D5AE48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		2806C63A175BE66C00827B6B /* Build configuration list for PBXProject "DynamicsCatalog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
